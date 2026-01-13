@@ -18,12 +18,6 @@ Virtual F13-F24 macro keypad for Windows - A small, always-on-top application th
 - **Position lock** - lock the window position to prevent accidental moves
 - **No external files** - everything is embedded, no folders created
 
-## 📥 Download
-
-Download the latest release from the [Releases](https://github.com/s0-5/STACK-PAD/releases) page.
-
-Simply run `STACK-PAD.exe` - no installation required!
-
 ## 🚀 Quick Start
 
 1. **Run the application** - Double-click `STACK-PAD.exe`
