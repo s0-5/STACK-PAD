@@ -56,6 +56,49 @@ Simply run `STACK-PAD.exe` - no installation required!
 - **Auto Repeat** - Configure automatic key repetition
 - **On/Off Toggle** - Control auto-repeat activation
 
+## 🔨 Building from Source
+
+If you want to build the application from source code, follow these steps:
+
+### Prerequisites
+
+1. **Install Python 3.10 or higher** from [python.org](https://www.python.org/downloads/)
+
+2. **Install the required dependencies** from `requirements.txt`:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+   This will install:
+   - PySide6 (GUI framework)
+   - pydantic (data validation)
+   - pywin32 (Windows API access)
+   - pynput (keyboard input)
+   - pyinstaller (EXE builder)
+
+### Building the EXE
+
+1. **Convert the icon** (optional but recommended):
+   ```bash
+   python -c "from PIL import Image; img = Image.open('STACK-PAD.png'); img.save('STACK-PAD.ico', format='ICO', sizes=[(256,256), (128,128), (64,64), (32,32), (16,16)])"
+   ```
+
+2. **Build the executable** using PyInstaller:
+   ```bash
+   pyinstaller --onefile --windowed --icon=STACK-PAD.ico --name=STACK-PAD --clean STACK_PAD.py
+   ```
+
+3. **Find your EXE** in the `dist/` folder:
+   - The compiled `STACK-PAD.exe` will be located in the `dist/` directory
+   - You can run it directly or distribute it to others
+
+### Running from Source
+
+Alternatively, you can run the application directly from Python:
+```bash
+python STACK_PAD.py
+```
+
 ## 📝 License
 
 This project is open source and available under the [MIT License](LICENSE.md).
