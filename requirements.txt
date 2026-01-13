@@ -1,0 +1,5 @@
+PySide6>=6.6.0
+pydantic>=2.5.0
+pywin32>=306
+pynput>=1.7.6
+pyinstaller>=6.0.0
